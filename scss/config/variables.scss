@@ -1,0 +1,15 @@
+//переменные
+
+$orange:#e45028;
+$yellow:#f8b43a;
+$green:#8ac03e;
+$red:#c1401e;
+$dark:#2f3234;
+$black:#2f3234;
+
+@mixin circle($width, $color) {
+  width: $width;
+  height: $width;
+  border-radius: $width/2;
+  background-color: $color;
+}

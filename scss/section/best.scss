@@ -1,0 +1,57 @@
+.bests  {
+
+  background-image: url('../img/content/bg.png');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  position: relative;
+}
+
+.section__title_best  {
+	color:$black;
+padding-top: 0px;
+}
+
+.best advantages__text  {
+  color: #2f3234;
+  font-family: 'Ubuntu';
+  font-weight: 300;
+  font-size:14px;
+  line-height: 1.42;
+  margin: 0;
+}
+
+.container  {
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.advantages__title  {
+  color: #2f3234;
+  font-family:'lifehack';
+  font-weight: 500;
+  font-size: rem(24px);
+  line-height: 1;
+  
+}
+.advantages__item  {
+   width: 305px;
+   text-align: center;
+   padding: 40px 0;
+   display: inline-block;
+   vertical-align: top;
+  
+}
+
+.advantages  {
+
+margin-top: 37px;
+}
+
+
+

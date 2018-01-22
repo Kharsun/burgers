@@ -1,0 +1,29 @@
+.header  {
+	height:10%;
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+	padding-top: 10px;
+	min-width: 100%;
+}
+
+.logo  {
+	margin-right: auto;
+
+}
+
+.nav  {
+	margin-right: 15px auto;
+}
+
+.nav__item  {
+	display: inline-block;
+	vertical-align: middle;
+	write-space: nowrap;
+}
+
+span.logo__title {
+     position: absolute;
+    left: 9999px;
+    top: 0;
+ 	}

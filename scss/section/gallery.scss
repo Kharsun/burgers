@@ -1,0 +1,51 @@
+.gallery  {
+	
+  background-image: url('../img/content/photos.png');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  position: relative;
+}
+
+
+
+.gallery__item {
+
+  width: 316px;
+  text-align: center;
+   
+ 
+   display: inline-block;
+   vertical-align: top;
+
+   & gallery__pic  {
+   display: flex;
+    justify-content: space-between;
+    align-item: center;
+    }
+
+  }
+
+.gallery__photo  {
+  width: 100%;
+
+  & gallery__pic {
+  width:25%;
+    }
+  }
+
+   
+
+
+    .gallery__pic  {
+    height:328px;
+    width:316px;
+    }
+
+
+
+
+   
+
+
+
