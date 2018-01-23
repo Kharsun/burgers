@@ -65,7 +65,8 @@ ul {
   min-height: 650px; }
 
 .container {
-  width: 940px;
+  max-width: 58.75rem;
+  min-width: 20rem;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -83,9 +84,9 @@ ul {
 
 .section {
   height: 100%;
-  min-height: 650px;
-  min-width: 940px;
-  background-color: #111517; }
+  min-height: 20rem;
+  min-width: 58.75rem;
+  background-color: #515151; }
 
 .button__link {
   padding: 0.625rem 0.9375rem;
@@ -198,12 +199,22 @@ span.logo__title, .nav-arrow-scroll__link {
   align-items: center;
   padding-bottom: 10%; }
 
-.mainpage__content__pic, .mainpage__description {
+.mainpage__content__img {
+  max-height: 100%;
+  max-width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.mainpage__content__img, .mainpage__description {
   -ms-flex-preferred-size: 50%;
   flex-basis: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline; }
 
 .mainpage__description {
   -webkit-box-orient: vertical;
@@ -238,7 +249,7 @@ span.logo__title, .nav-arrow-scroll__link {
   background-size: cover;
   position: relative; }
 
-.section__title_best {
+.section__title_black {
   color: #2f3234;
   padding-top: 0px; }
 
@@ -266,6 +277,9 @@ span.logo__title, .nav-arrow-scroll__link {
   -ms-flex-align: center;
   align-items: center; }
 
+.advantages__pic {
+  height: 5.3125rem; }
+
 .advantages__title {
   color: #2f3234;
   font-family: 'lifehack';
@@ -273,42 +287,101 @@ span.logo__title, .nav-arrow-scroll__link {
   font-size: 1.5rem;
   line-height: 1; }
 
-.advantages__item {
-  width: 305px;
+.advantages__list {
   text-align: center;
   padding: 40px 0;
-  display: inline-block;
-  vertical-align: top; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.advantages__item {
+  width: 33%;
+  text-align: center; }
 
 .advantages {
   margin-top: 37px; }
 
-.gallery {
-  background-image: url("../img/content/photos.png");
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: cover;
-  position: relative; }
-
 .gallery__item {
-  width: 316px;
-  text-align: center;
-  display: inline-block;
-  vertical-align: top; }
-  .gallery__item gallery__pic {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    align-item: center; }
+  width: 25%;
+  height: 50%; }
+
+.gallery__list {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
 
 .gallery__photo {
-  width: 100%; }
-  .gallery__photo gallery__pic {
-    width: 25%; }
+  height: 100%; }
 
 .gallery__pic {
-  height: 328px;
-  width: 316px; }
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover; }
+
+.comments__block {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  padding: 3.125rem 1.25rem; }
+
+.comments__title {
+  font-family: 'gagalinregular';
+  font-weight: 400;
+  font-size: 0.875rem;
+  font-style: normal;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+  color: #fff; }
+
+.comments__text {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-size: 0.875rem;
+  font-style: normal;
+  line-height: 1.5rem;
+  margin-bottom: 1.25rem;
+  color: #fff; }
+
+.comments__button {
+  background-color: #2f3234;
+  padding: 0.625rem 0.9375rem;
+  border: 1px solid transparent;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  min-width: 6.125rem;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 13px;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s; }
+
+.comments__button:hover {
+  background-color: #171819; }
+
+.gallery__item:hover .comments__block {
+  opacity: 1;
+  background-color: rgba(20, 20, 20, 0.7); }

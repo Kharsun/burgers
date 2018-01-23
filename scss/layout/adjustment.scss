@@ -11,7 +11,8 @@
 
 .container  {
 
-  width:940px;
+  max-width:rem(940px);
+  min-width:rem(320px);
   margin:0 auto;
   display: flex;
   justify-content: center;
@@ -23,9 +24,9 @@
 .section   {
   
   height: 100%;
-  min-height: 650px;
-  min-width: 940px;
-  background-color:#111517;
+  min-height:rem(320px);
+  min-width:rem(940px);
+  background-color:#515151;
 }
 
 .button__link  {

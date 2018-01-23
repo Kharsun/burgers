@@ -83,9 +83,19 @@ span.logo__title, .nav-arrow-scroll__link {
   padding-bottom: 10%;
 }
 
-.mainpage__content__pic, .mainpage__description {
+.mainpage__content__img {
+  max-height:100%;
+  max-width:100%;
+  justify-content: center;
+}
+
+
+
+
+.mainpage__content__img, .mainpage__description {
   flex-basis: 50%;
   display: flex;
+  align-items: baseline;
 
 }
 .mainpage__description {
