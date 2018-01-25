@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'gagalinregular';
+    src: url('../fonts/gagalin-regular-webfont.woff2') format('woff2'),
+         url('../fonts/gagalin-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'Lifehack';
+  src: url('../fonts/lifehack_medium-webfont.woff2') format('woff2'), url('../fonts/lifehack_medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.button__title  {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight:400;
+	font-size:13px;
+	text-transform: uppercase;
+	color: #fff;
+}
