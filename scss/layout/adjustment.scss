@@ -24,9 +24,10 @@
 .section   {
   
   height: 100%;
-  min-height:rem(320px);
+  min-height:rem(650px);
   min-width:rem(940px);
   background-color:#515151;
+  overflow: hidden;
 }
 
 .button__link  {

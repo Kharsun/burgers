@@ -60,11 +60,15 @@
   }
 
 
-span.logo__title, .nav-arrow-scroll__link {
+span.logo__title {
      position: absolute;
     left: 9999px;
     top: 0;
  	}
+
+  .nav-arrow-scroll__link  {
+  color: transparent;
+  }
 
  .container mainpage {
   height: 100%;

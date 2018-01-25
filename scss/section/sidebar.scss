@@ -1,0 +1,42 @@
+.nav-sitebar__list  {
+
+	position:fixed;
+	top: rem(30px);
+	right: 54px;
+	
+}
+
+.nav-sitebar__item  {
+	margin-bottom: rem(16px);
+}
+
+.nav-sitebar__link  {
+	display: flex;
+	width: rem(16px);
+	height: rem(16px);
+	text-decoration: none;
+	border: 1px solid transparent;
+	color: transparent;
+	border-radius: 50%;
+	position: relative;
+
+	&:hover  {
+	border-color: #fff;
+	}
+
+	&:before  {
+	content: "";
+	width: rem(6px);
+	height: rem(6px);
+	display: block;
+	border-radius: 50%;
+	background-color: #fff;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+	}
+	
+}
