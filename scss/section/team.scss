@@ -1,0 +1,103 @@
+.team  {
+	background-image: url('../img/content/SBS_1255-X2.jpg');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+}
+
+.team__container  {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(#2f3234, 0.93);
+
+
+}
+
+.team__content  {
+	width: 70%;
+	margin-bottom:rem(105px);
+}
+
+.team__accord-text {
+	color: #fff;
+	margin-left: rem(21px);
+}
+
+.team__accord-aricle-title  {
+	color: #fff;
+}
+
+.team__accord-item--active  {
+    padding-right: 90px;
+
+    .team__accord-trigger  {
+     color: $yellow;
+
+    &:before  {
+	transform: rotate (180 deg); 
+	}
+
+    }
+
+	.team__accord-content  {
+	   height: auto;
+	   display: flex;
+
+	}
+
+}
+
+.team__accord-content  {
+	height: 0;
+	overflow: hidden;
+	
+}
+
+.team__accord-trigger {
+    font-size: rem(14px);
+	color: #fff;
+	font-family: 'gagalinregular';
+	text-decoration: none;
+	display: flex;
+
+
+
+	&:before  {
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	border: rem(9px) solid transparent;
+	border-bottom--with: 0;
+	border-top-color: $yellow;
+	margin-top: 21px;
+    margin-right: 10px; 
+
+
+	}
+}
+
+.team__accord-pic  {
+	margin-bottom: rem(20px);
+	marggin-left: rem(17px);
+}
+
+.team__accord-avatar  {
+	border: 1px solid transparent;
+	width: rem(100px);
+	height: rem(100px);
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+
+
+

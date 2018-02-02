@@ -1,0 +1,29 @@
+.social__list  {
+	display: flex;
+    align-items: center;
+    padding: rem(18px) 0;
+
+}
+
+
+.social__icon  {
+ display:inline-block;
+  vertical-align:middle;
+  margin-left:rem(20px);
+  fill: #fff;
+  opacity: 0.3;
+  transition: opacity 0.5s;
+  width:rem(20px);
+  height:rem(20px);
+  &:hover {
+    fill: #fff;
+    opacity: 1;
+  }
+ 
+  
+}
+
+.social__item:first-child {
+    margin-left: 0;
+    }
+
