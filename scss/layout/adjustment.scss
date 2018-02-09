@@ -52,3 +52,11 @@
 .button__link:hover {
   background:$red;
 }
+
+.button__title  {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight:400;
+  font-size:13px;
+  text-transform: uppercase;
+  color: #fff;
+}
